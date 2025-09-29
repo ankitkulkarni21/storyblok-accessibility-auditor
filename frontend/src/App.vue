@@ -107,7 +107,7 @@ const fetchAndAudit = async () => {
 
         const content = data.story.content;
 
-        const response = await axios.post('http://localhost:8080/api/audit', {
+        const response = await axios.post('https://storyblok-accessibility-auditor.onrender.com/', {
             content: JSON.stringify(content), 
         });
 
