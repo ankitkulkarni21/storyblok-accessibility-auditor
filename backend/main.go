@@ -150,6 +150,6 @@ func main() {
 
 	router.POST("/api/audit", auditHandler)
 
-	fmt.Println("Gin server is running on https://storyblok-accessibility-auditor.onrender.com/")
-	log.Fatal(router.Run("https://storyblok-accessibility-auditor.onrender.com/"))
+	fmt.Println("Gin server is running on http://localhost:8080")
+	log.Fatal(router.Run(":8080"))
 }
