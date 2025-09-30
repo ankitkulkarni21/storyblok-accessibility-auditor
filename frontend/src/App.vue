@@ -61,7 +61,7 @@
             Reset
           </button>
         </form>
-        <div class="app-description">
+        <div class="app-description" v-if="!isLoading && !auditReport">
             <p>This is the "Storyblok Accessibility Auditor", a full-stack tool built with Vue.js and a Go API backend.</p>
             <p>The auditor dynamically checks your Storyblok content for common structural accessibility issues based on the rules selected above. Currently checking for:</p>
             <ul>
