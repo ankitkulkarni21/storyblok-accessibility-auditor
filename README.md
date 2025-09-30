@@ -15,7 +15,7 @@ Forget vague error messages. Our audit report provides immediate, highlighted JS
 The entire application runs on separate, dedicated services. This showcases a robust, real-world deployment strategy and allows both the frontend and backend to be scaled independently.
 
 Technology & Deployment: 
-Our project utilizes a high-performance stack for speed and reliability:
+Our project utilizes a high-performance stack for speed and reliability
 
 1. Frontend (UI): Technology used - Vue.js 3 (Composition API)	& Hosted on Vercel
 
