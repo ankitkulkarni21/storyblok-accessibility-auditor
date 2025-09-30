@@ -39,17 +39,44 @@ h1 {
   text-align: center; 
   margin: 0 auto; 
   max-width: 800px;
-  margin-top:150px;
+  margin-top: 0px;
   margin-bottom: auto;
 }
 
 .subtitle {
   color: #cccccc;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 1.1em;
   text-align: center;
 }
 
+.rule-selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 20px;
+    margin: 10px auto 30px;
+    padding: 10px;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.rule-toggle {
+    display: flex;
+    align-items: center;
+    color: #cccccc;
+    font-size: 0.9em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.rule-toggle input[type="checkbox"] {
+    width: auto;  
+    height: auto; 
+    min-width: unset; 
+    margin-right: 8px;
+    background-color: transparent;
+}
 .input-form {
   display: flex;
   flex-wrap: wrap; 
@@ -240,4 +267,82 @@ h2 {
   background-color: rgba(0, 0, 0, 0.1);
   color: #333;
   margin-left: 15px;
+}
+
+.issues-list li span[class^="severity-"] {
+    display: inline-block;
+    padding: 2px 8px;
+    margin-left: 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.severity-error {
+    background-color: #dc3545;
+}
+
+.severity-warning {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.problem-code {
+    background-color: #2b2b2b;
+    color: #f1f1f1;
+    border-left: 5px solid #007bff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    text-align: left;
+    font-size: 0.9em;
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.problem-code code {
+    white-space: pre-wrap;
+}
+
+.app-description {
+    max-width: 600px;
+    margin: 40px auto 20px;
+    padding: 20px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    border-left: 5px solid #007bff;
+    color: #f1f1f1;
+    font-size: 0.95em;
+}
+
+.app-description p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #e0e0e0;
+}
+
+.app-description ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.app-description ul li {
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+
+.app-description ul li::before {
+    content: '•'; 
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
